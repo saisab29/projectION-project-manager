@@ -1,9 +1,14 @@
 import React from 'react'
 import { ArrowRight } from "react-feather";
+import { useNavigate } from 'react-router-dom';
 import styles from "./Home.module.css"
-import designIcon from './designer.svg';
+import designIcon from './designLogo.png';
 
 function Home() {
+    const navigate = useNavigate();
+    const handleNextButtonClick = () => {
+        navigate('/login');
+    };
     return (
 
         <div className={styles.container}>
@@ -15,7 +20,7 @@ function Home() {
                     <p className={styles.subHeading}>
                         Organize and showcase all of your project to the world
                     </p>
-                    <button>Get Started <ArrowRight />{" "}</button>
+                    <button onClick={handleNextButtonClick}>Get Started <ArrowRight />{" "}</button>
 
                 </div>
                 <div className={styles.right}>
