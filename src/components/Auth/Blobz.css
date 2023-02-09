@@ -1,27 +1,7 @@
 
 .tk-blob {
-  animation: blob-turn var(--time, 30s) linear infinite;
-  fill: var(--fill, #692add);
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150%;
-}
-.tk-blob1 {
-  animation: blob-turn var(--time, 30s) linear infinite;
-  fill: var(--fill, #c6fa1d);
-  position: absolute;
-  z-index: -1;
-  top: -10;
-  left: 10;
-  width: 100%;
-  height: 200%;
-}
-.tk-blob2 {
-  animation: blob-turn var(--time, 30s) linear infinite;
-  fill: var(--fill, #1d3afa);
+  animation: blob-turn var(--time, 20s) linear infinite;
+  fill: var(--fill, #3f52ff);
   position: absolute;
   z-index: -1;
   top: 0;
@@ -30,36 +10,23 @@
   height: 150%;
 }
 
+
 .tk-blob svg {
-  animation: blob-skew calc( var(--time, 30s) * 0.5 ) linear 0s infinite;
-  transform-origin: center;
-  position: absolute;
+  animation: blob-skew calc( var(--time, 15s)) linear 0s infinite;
+  fill: var(--fill, #5323e2);
+  position: relative;
   top: 0;
   left: 0;
   width: 200%;
   height: 100%;
 }
-.tk-blob1 svg {
-  animation: blob-skew calc( var(--time, 20s) * 0.5 ) linear 0s infinite;
-  position: absolute;
-  top: 0;
-  left: 50;
-  width: 100%;
-  height: 150%;
+
+
+.tk-blob svg path {
+  animation: blob-scale calc( var(--time, 20s) * 0.5 ) ease-in-out 0s infinite;
+  transform-origin: left;
 }
 
-.tk-blob2 svg path {
-  animation: blob-scale calc( var(--time, 20s) * 0.5 ) ease-in-out 0s infinite;
-  transform-origin: center;
-}
-.tk-blob1 svg path {
-  animation: blob-scale calc( var(--time, 10s) * 0.5 ) ease-in-out 0s infinite;
-  transform-origin: center;
-}
-.tk-blob2 svg path {
-  animation: blob-scale calc( var(--time, 15s) * 0.5 ) ease-in-out 0s infinite;
-  transform-origin: center;
-}
 
 @keyframes blob-turn {
   0% {

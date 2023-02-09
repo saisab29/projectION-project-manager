@@ -31,13 +31,18 @@
   }
 
   .smallLink{
-    
     position: absolute;
     left: 0%;
-    top: -30px;
+    top: -25px;
+  }
+  .smallLink a{
+    
     color: #fff;
     font-weight: bold;
     cursor: pointer;
+    font-size: 0.95 rem;
+    text-decoration: none;
+
   }
 
   .form .heading{
@@ -66,4 +71,29 @@
 }
 .form button:active {
     transform: translateY(1px);
+}
+.form button:disabled {
+  background-color: gray !important;
+}
+
+.form .error{
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: rgb(255, 42, 42);
+  width: 100%;
+  text-align: center;
+}
+
+.form .bottom p{
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.bottom p a{
+  color: #223dc4;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
 }
